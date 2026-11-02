@@ -1,0 +1,464 @@
+crée moi une application mobile :CHIJU Assistant Pédagogique
+spark
+Gemini
+1. Présentation générale du projet
+2. CHIJU Assistant Pédagogique est une application mobile intelligente destinée aux maîtresses et maîtres du primaire dans les pays africains francophones. Elle centralise les tâches pédagogiques et administratives de l'enseignant dans un seul outil accessible, simple et adapté aux réalités du terrain.
+L'application doit fonctionner aussi bien pour un enseignant indépendant que pour un établissement scolaire qui souhaite organiser plusieurs classes et enseignants.
+Fiche d'identité du projet
+Nom du produit
+CHIJU Assistant Pédagogique
+Type
+Application mobile EdTech
+Plateformes
+Android et iOS
+Public cible
+Enseignants et écoles primaires
+Technologie
+No-code / low-code et IA
+Connectivité
+Priorité au fonctionnement hors ligne
+Modèle économique
+Freemium, abonnements et licences scolaires
+Langue initiale
+Français, avec extension multilingue
+Vision du produit
+Faire de CHIJU le compagnon de travail quotidien de l'enseignant : de la préparation de la première leçon jusqu'au bilan de fin de journée.
+Objectifs principaux
+1. Réduire le temps consacré aux tâches administratives répétitives.
+2. Faciliter la préparation de cours et d'exercices adaptés au niveau des élèves.
+3. Centraliser les présences, notes, compétences et progrès.
+4. Produire des rapports et documents scolaires sans ressaisie inutile.
+5. Permettre de travailler sans connexion Internet permanente.
+6. Donner aux directions d'école une vue organisée sur les classes, sans surveillance excessive des enseignants ni exposition inutile des données des enfants.
+7. Périmètre fonctionnel
+8. CHIJU doit être construit progressivement. Le périmètre initial privilégie les fonctions utilisées chaque jour par les enseignants, puis ajoute l'intelligence artificielle, les outils de direction et les espaces parents.
+Priorité P0 — Indispensable au lancement
+Gestion des classes et élèves, appel, emploi du temps, cahier journal, leçons, notes, sauvegarde, synchronisation et export PDF.
+Priorité P1 — Valeur ajoutée intelligente
+Génération de leçons, création d'exercices, propositions de corrections, remédiation pédagogique et rapports automatiques.
+Priorité P2 — Déploiement en établissement
+Gestion multi-enseignants, direction, plusieurs classes, communication parentale, suivi consolidé et administration des abonnements.
+1. Modules fonctionnels détaillés
+2. 3.1. Tableau de bord
+3. L'écran d'accueil présente les informations utiles immédiatement :
+- Date, classe active et programme de la journée.
+- Nombre d'élèves inscrits, présents, absents et en retard.
+- Cours prévus et préparation restant à terminer.
+- Évaluations à corriger et devoirs à préparer.
+- Alertes et rappels.
+- Boutons d'accès rapide : faire l'appel, préparer une leçon, saisir des notes, générer un exercice.
+- Le tableau de bord doit être personnalisable selon le rôle et le niveau scolaire.
+- 3.2. Gestion des classes et des élèves
+- Chaque enseignant peut créer ou rejoindre une classe selon ses autorisations.
+Fonctionnalités :
+- Création des classes par année scolaire et niveau.
+- Import des listes depuis un fichier CSV.
+- Création et modification des fiches élèves.
+- Numéro interne, nom, prénom et date d'inscription.
+- Historique des présences, évaluations et compétences.
+- Archivage d'une classe en fin d'année, sans supprimer son historique.
+- Transfert contrôlé d'un élève vers une autre classe.
+- Les données personnelles non indispensables — adresse complète, informations familiales détaillées ou données médicales — ne doivent pas être exigées par défaut.
+- 3.3. Présences et absences
+- L'enseignant doit pouvoir effectuer l'appel en quelques secondes.
+- Statuts : présent, absent, retard, absence justifiée.
+- Appel individuel ou marquage groupé des présents.
+- Date et heure de l'appel.
+- Modification autorisée avec historique des changements.
+- Résumé quotidien et rapport mensuel.
+- Export PDF ou CSV.
+- Synchronisation des modifications réalisées hors ligne.
+- Une absence ne doit pas déclencher automatiquement une notification aux parents sans règle configurée et mécanisme de contrôle adapté.
+- 3.4. Planification pédagogique et cahier journal
+- Ce module constitue l'un des éléments les plus importants de CHIJU.
+Chaque séance contient :
+Champ Description
+Matière Français, mathématiques, sciences, etc.
+Niveau CP, CE1, CE2, CM1, CM2 ou équivalent local
+Date et durée Moment et durée prévue
+Objectifs Compétences visées
+Prérequis Connaissances nécessaires
+Matériel Tableau, cahier, fiches, objets
+Déroulement Introduction, activité, pratique, synthèse
+Évaluation Vérification des acquis
+Remédiation Activités supplémentaires en cas de difficulté
+Bilan réel Ce qui a été réalisé et les adaptations nécessaires
+L'enseignant doit pouvoir copier une séance, la modifier, la déplacer dans son emploi du temps et l'imprimer.
+Le cahier journal doit distinguer la préparation prévue de la séance réellement effectuée.
+3.5. Assistant pédagogique par intelligence artificielle
+L'assistant IA fonctionne à partir d'un formulaire simple ou d'une instruction vocale.
+Exemple de demande :
+Prépare une leçon de mathématiques sur les fractions pour une classe de CM1. Prévois une séance de 45 minutes, des exemples concrets, cinq exercices progressifs, un corrigé et une activité de remédiation.
+L'application doit produire une fiche organisée :
+1. Objectifs d'apprentissage.
+2. Matériel et prérequis.
+3. Déroulement chronologique.
+4. Explications et exemples.
+5. Exercices gradués.
+6. Corrigé détaillé.
+7. Évaluation rapide.
+8. Activités de remédiation.
+9. Sources pédagogiques ou référence au programme utilisé, si disponibles.
+10. L'enseignant peut modifier, enregistrer, dupliquer et exporter le résultat.
+Règle fondamentale : une production de l'IA est une proposition, pas une vérité pédagogique garantie. L'enseignant valide le contenu avant de l'utiliser en classe.
+3.6. Évaluations, notes et compétences
+Le module doit permettre :
+- La création d'une évaluation avec titre, matière, date et barème.
+- La saisie des notes sur mobile.
+- Le calcul des moyennes selon des coefficients configurables.
+- La gestion des absences à une évaluation.
+- Le suivi des compétences acquises, en cours d'acquisition ou non acquises.
+- La visualisation des progrès dans le temps.
+- La génération de relevés et de bulletins selon les modèles autorisés dans le pays.
+- Les calculs doivent être réalisés par des règles déterministes et testées, et non confiés à l'IA.
+- 3.7. Devoirs, exercices et bibliothèque
+- Création de devoirs par matière et par classe.
+- Date de distribution et échéance.
+- Association à une leçon.
+- Banque d'exercices réutilisables.
+- Classement par niveau, compétence et difficulté.
+- Corrigés réservés à l'enseignant.
+- Export des fiches en PDF pour impression.
+- Téléchargement des ressources pour une consultation hors ligne.
+- Les ressources externes doivent être utilisées conformément à leurs licences.
+- 3.8. Bulletins et rapports
+- CHIJU doit pouvoir générer :
+- Le bilan de la journée.
+- Le rapport hebdomadaire de l'enseignant.
+- Le relevé des absences.
+- Le bilan individuel d'un élève.
+- Les résultats par matière et compétence.
+- Les bulletins périodiques selon le modèle configuré.
+- Le rapport de classe destiné à la direction.
+- Tous les documents doivent afficher les informations nécessaires : école, année scolaire, classe, période, date de génération et identité du responsable habilité.
+- 3.9. Gestion des établissements
+- Pour les écoles, l'application doit ajouter :
+- Création de l'établissement et de ses années scolaires.
+- Gestion des classes et affectations des enseignants.
+- Attribution des rôles.
+- Paramétrage des programmes, matières et périodes.
+- Suivi administratif des classes.
+- Modèles de documents communs.
+- Gestion des abonnements et des licences.
+- Une direction ne doit accéder qu'aux données nécessaires à sa fonction. Les données d'un enseignant indépendant ne doivent jamais devenir visibles à un établissement auquel il n'appartient pas.
+- 3.10. Communication avec les parents — phase ultérieure
+- Messages préparés par l'enseignant.
+- Informations sur les devoirs et réunions.
+- Rapports périodiques validés.
+- Gestion des destinataires autorisés.
+- Historique des messages envoyés.
+- L'accès des parents doit être limité aux enfants dont ils sont légalement autorisés à consulter les informations. Les coordonnées et autorisations doivent être vérifiées. Les notifications automatiques et les canaux de communication seront activés seulement après validation du cadre légal applicable.
+1. Cartographie des écrans mobiles
+2. L'application doit privilégier une navigation courte, des boutons suffisamment grands, des formulaires simples et des écrans utilisables sur des téléphones Android d'entrée de gamme.
+3. Navigation principale recommandée
+4. Accueil
+Ma classe
+Planning
+Assistant IA
+Résultats
+Plus
+La rubrique « Plus » regroupe les devoirs, les rapports, les ressources, les paramètres et l'aide.
+Liste des écrans à concevoir
+Code Écran Fonction
+E01 Écran de bienvenue Présentation et choix de langue
+E02 Inscription / connexion Compte enseignant ou établissement
+E03 Configuration initiale Pays, école, année et niveau
+E04 Accueil Résumé de la journée
+E05 Liste des classes Sélection et création de classe
+E06 Fiche de classe Élèves, matières et effectifs
+E07 Fiche élève Présences, notes et compétences
+E08 Faire l'appel Marquer et corriger les présences
+E09 Emploi du temps Vue quotidienne et hebdomadaire
+E10 Cahier journal Préparation et bilan des séances
+E11 Assistant IA Génération et modification de contenus
+E12 Éditeur de leçon Création manuelle ou assistée
+E13 Exercices Banque, création et corrigés
+E14 Évaluations Création des contrôles et barèmes
+E15 Saisie des notes Notes et calculs automatiques
+E16 Progression Compétences et tendances
+E17 Rapports Prévisualisation et export
+E18 Ressources Bibliothèque pédagogique
+E19 Synchronisation État hors ligne et conflits
+E20 Profil et paramètres Préférences, sécurité et compte
+E21 Espace direction Gestion des enseignants et classes
+E22 Administration web Gestion globale de la plateforme
+L'espace direction et le panneau d'administration peuvent être livrés après la première version mobile.
+5. Rôles et permissions
+Le système doit appliquer le principe du moindre privilège : chaque utilisateur n'accède qu'aux fonctions et données dont il a besoin.
+Rôle Droits principaux
+Enseignant indépendant Gérer ses classes, cours, présences, notes et rapports
+Enseignant d'une école Gérer les classes qui lui sont affectées
+Directeur Gérer l'établissement, les affectations et les rapports autorisés
+Administrateur de plateforme Gérer le fonctionnement technique, les comptes et la configuration globale
+Parent ou tuteur — phase 2 Consulter uniquement les informations autorisées concernant son enfant
+Support technique Diagnostiquer les problèmes sans accès systématique aux données scolaires en clair
+Un administrateur technique ne doit pas disposer automatiquement d'un accès libre aux notes, aux fiches des élèves ou aux dossiers personnels. Les accès exceptionnels doivent être justifiés, limités et journalisés.
+Règles de permissions essentielles
+- Un enseignant ne peut pas modifier les données d'une classe qui ne lui est pas attribuée.
+- Un directeur ne peut accéder qu'à son établissement.
+- Les changements de notes et de présences sont enregistrés dans un journal d'audit.
+- Les suppressions sensibles nécessitent une confirmation et, lorsque nécessaire, une autorisation supérieure.
+- Le transfert d'une classe ou d'un élève doit préserver la traçabilité.
+- Les droits sont contrôlés côté serveur, et non uniquement par les boutons visibles dans l'application.
+1. Modèle de données et base de données
+2. Je recommande une base relationnelle PostgreSQL, adaptée aux relations entre établissements, utilisateurs, classes, élèves, évaluations et résultats.
+3. 6.1. Entités principales
+4. Utilisateurs
+Profils, rôles et authentification
+Établissements
+Années scolaires
+Affectations
+Rôles par école
+Classes
+Niveaux et élèves
+Programmes
+Pays, matières, compétences
+Présences
+Historique journalier
+Leçons et séances
+Préparation et bilan
+Évaluations et notes
+Barèmes et résultats
+Rapports
+Bilans et exports
+6.2. Schéma des tables
+Table Champs principaux
+users id, email, display_name, preferred_language, created_at
+organizations id, name, country_code, timezone, status
+organization_members organization_id, user_id, role, status
+school_years id, organization_id, label, start_date, end_date
+classes id, organization_id, school_year_id, name, grade_level
+class_teachers class_id, teacher_id, role
+students id, organization_id, student_code, first_name, last_name, status
+class_enrollments class_id, student_id, start_date, end_date
+subjects id, country_code, name, grade_level
+curriculum_versions id, country_code, version, effective_date, status
+competencies id, curriculum_version_id, subject_id, code, description
+timetable_entries id, class_id, subject_id, day_of_week, start_time, end_time
+lesson_plans id, teacher_id, class_id, subject_id, title, objectives, status
+lesson_sessions id, lesson_plan_id, scheduled_at, duration_minutes, actual_summary
+attendance_records id, class_id, student_id, date, status, recorded_by
+assignments id, class_id, subject_id, title, due_date, status
+assessments id, class_id, subject_id, title, max_score, date
+assessment_results id, assessment_id, student_id, score, feedback
+student_competencies id, student_id, competency_id, mastery_level, updated_at
+resources id, owner_id, title, resource_type, storage_path
+ai_generations id, user_id, generation_type, model_version, status, created_at
+audit_logs id, actor_id, organization_id, action, entity_type, entity_id, created_at
+sync_operations id, device_id, operation_id, status, server_version
+subscriptions id, organization_id, plan_code, status, valid_until
+Ce schéma est un point de départ. Les types SQL, les clés étrangères, les index, les contraintes d'unicité et les règles de suppression devront être définis lors de l'implémentation.
+6.3. Contraintes techniques des données
+- Utiliser des identifiants UUID et des dates stockées de manière cohérente.
+- Prévoir plusieurs pays, devises et fuseaux horaires.
+- Distinguer le compte utilisateur de la fiche enseignant.
+- Distinguer un élève d'une inscription dans une classe : un élève peut changer de classe ou d'année.
+- Interdire les doublons d'appel pour un même élève, une même classe et une même date, selon la règle de présence retenue.
+- Contrôler les notes dans les limites des barèmes.
+- Conserver les anciennes versions des programmes scolaires.
+- Prévoir un mécanisme de suppression ou d'anonymisation lorsque la loi l'exige.
+- Éviter de stocker les informations personnelles des enfants dans les journaux techniques ou les prompts IA sans nécessité.
+1. Architecture technique recommandée
+2. Pour une réalisation par IA et no-code, je recommande une architecture hybride : interface visuelle no-code, base de données relationnelle sécurisée et petits services de code sur mesure pour les fonctions sensibles.
+3. Application mobile FlutterFlow
+Android · iOS · Interface et navigation
+API sécurisée et authentification
+Supabase / PostgreSQL
+Données · Rôles · Stockage privé · RLS
+Service IA
+Génération pédagogique via serveur
+Synchronisation
+File locale et conflits de données
+Génération PDF
+Fiches, rapports et bulletins
+Console web
+Administration et gestion scolaire
+Choix des technologies
+Composant Choix de départ Raison
+Interface mobile FlutterFlow Construction visuelle et génération d'applications Flutter
+Base de données Supabase PostgreSQL Relations, requêtes, contraintes et séparation des organisations
+Authentification Supabase Auth Gestion des comptes et sessions
+Autorisations PostgreSQL RLS Protection des données au niveau des lignes
+Stockage de fichiers Supabase Storage privé Ressources et documents scolaires
+Logique serveur Edge Functions ou API dédiée Autorisations, génération IA, exports et traitements sensibles
+Intelligence artificielle API de modèle compatible, choisie après tests Création de contenus et adaptation pédagogique
+Stockage local SQLite ou base locale adaptée à Flutter Présences, brouillons et données autorisées hors ligne
+Automatisation n8n, uniquement pour les tâches non critiques Notifications, traitements planifiés et intégrations
+Administration Console web développée avec les mêmes services Gestion des écoles, comptes et abonnements
+Les produits et capacités devront être validés au moment de l'implémentation, notamment pour le mode hors ligne, les exports, les tarifs et les règles de publication sur les boutiques.
+Architecture hors ligne
+Le mode hors ligne ne doit pas être une simple page affichée sans Internet. Il faut définir précisément quelles opérations fonctionnent localement.
+Disponibles hors connexion :
+- consultation des classes et des listes déjà synchronisées ;
+- appel et modification des présences ;
+- consultation des leçons téléchargées ;
+- saisie des notes et brouillons autorisés ;
+- consultation des ressources enregistrées.
+- Nécessitant généralement une connexion :
+- génération de contenus par l'IA distante ;
+- inscription et récupération de compte ;
+- synchronisation et opérations partagées entre enseignants ;
+- envoi de notifications distantes.
+- Chaque modification locale doit recevoir un identifiant d'opération unique, être conservée dans une file de synchronisation et être envoyée de manière idempotente. En cas de conflit sur une note ou une présence déjà modifiée sur un autre appareil, CHIJU doit demander une résolution ou appliquer une règle explicitement définie, plutôt que d'écraser silencieusement les données.
+1. Sécurité et protection des données des enfants
+2. La sécurité est une exigence centrale, car CHIJU traitera des résultats scolaires, des absences et des informations relatives à des mineurs.
+Les règles exactes devront être vérifiées pays par pays avant le lancement. Le fait de cibler plusieurs pays francophones ne signifie pas qu'un seul régime juridique s'applique partout.
+8.1. Mesures obligatoires dès la première version
+Contrôle d'accès strict
+Authentification sécurisée, rôles explicites, politiques RLS pour chaque table exposée et vérifications côté serveur.
+Chiffrement
+HTTPS/TLS pour les communications, chiffrement des données stockées selon les capacités de l'infrastructure et protection des secrets.
+Isolation des établissements
+Chaque requête doit vérifier l'appartenance de l'utilisateur à l'organisation. Une école ne doit jamais accéder aux données d'une autre.
+Traçabilité
+Journalisation des modifications importantes, notamment les notes, présences, rôles et exports sensibles.
+Cycle de vie des données
+Politique de conservation, archivage, suppression et anonymisation avec des durées définies et justifiées.
+8.2. Règles spécifiques aux mineurs
+1. Ne collecter que les informations nécessaires à la mission pédagogique.
+2. Ne jamais utiliser les données des élèves pour la publicité ciblée.
+3. Ne pas vendre de données scolaires ou comportementales.
+4. Ne pas envoyer les noms, notes ou dossiers individuels à un service d'IA externe sans nécessité, autorisation appropriée et garanties contractuelles.
+5. Privilégier des requêtes IA ne contenant que le niveau, la matière, les objectifs et des données anonymisées.
+6. Encadrer l'accès des parents et des établissements par des autorisations vérifiées.
+7. Prévoir une procédure de gestion des incidents et de notification lorsque la loi l'impose.
+8. Permettre l'exercice des droits applicables sur les données : accès, rectification, suppression ou autres droits prévus par la législation.
+9. 8.3. Sécurité du mode hors ligne
+10. Les données locales sont également sensibles. Il faut :
+- limiter les informations téléchargées au strict nécessaire ;
+- protéger la base locale et les fichiers sensibles ;
+- ne pas conserver les jetons d'authentification dans un stockage non sécurisé ;
+- prévoir une expiration ou une révocation des sessions ;
+- effacer les données locales lorsque le compte est déconnecté, selon une procédure qui ne détruit pas les modifications non synchronisées sans avertissement ;
+- éviter les sauvegardes non protégées sur des services personnels non autorisés.
+- 8.4. Cadre juridique à vérifier
+- Avant le déploiement dans chaque pays, il faudra établir une fiche de conformité qui couvre :
+- la loi nationale sur les données personnelles ;
+- les règles applicables aux données des mineurs et au consentement ;
+- les responsabilités respectives de l'école et de l'éditeur ;
+- les contrats de sous-traitance et les transferts internationaux de données ;
+- les règles de conservation des dossiers scolaires ;
+- les obligations de sécurité et de notification des incidents.
+- Le RGPD peut s'appliquer dans certaines situations, mais il ne constitue pas à lui seul le cadre juridique universel de tous les pays africains francophones. Un avis juridique local est nécessaire avant le lancement commercial.
+1. Fonctionnement de l'intelligence artificielle
+2. CHIJU doit utiliser l'IA là où elle apporte une valeur réelle, et conserver des règles classiques pour les calculs, les permissions et les données officielles.
+3. 9.1. Les quatre assistants IA
+Assistant de préparation
+Génère des fiches de cours structurées, des objectifs, des étapes d'apprentissage et des activités.
+Assistant d'exercices
+Propose des questions de difficulté progressive, des corrigés et des variantes d'entraînement.
+Assistant de remédiation
+À partir de résultats autorisés, suggère des compétences à retravailler et des exercices adaptés, sans diagnostiquer les enfants.
+Assistant de rédaction
+Prépare les comptes rendus, bilans de séance et rapports à partir des données que l'enseignant choisit d'inclure.
+9.2. Pipeline de génération
+1. L'enseignant choisit le pays, le niveau, la matière et l'objectif.
+2. Le serveur récupère les références pédagogiques autorisées correspondant à la version du programme.
+3. Le serveur prépare un prompt sans données nominatives inutiles.
+4. Le modèle IA produit une réponse structurée selon un format défini.
+5. Le serveur valide le format et les limites de contenu.
+6. L'enseignant vérifie et modifie la proposition.
+7. La version validée est enregistrée dans le cahier journal ou la bibliothèque.
+8. 9.3. Maîtrise des coûts IA
+- Limiter la longueur des requêtes et réponses.
+- Mettre en cache les ressources pédagogiques réutilisables.
+- Ne pas régénérer une leçon identique sans raison.
+- Afficher les quotas selon le forfait.
+- Mesurer le coût par génération.
+- Prévoir un message clair lorsque le service IA est indisponible.
+- Séparer les données pédagogiques de référence des contenus générés.
+- Il faut éviter de promettre une conformité automatique aux programmes scolaires. La qualité de l'IA dépendra de la disponibilité et de la fiabilité des programmes officiels, de leur numérisation et de la validation pédagogique.
+1. MVP : première version commercialisable
+2. Le MVP doit prouver que les enseignants utilisent régulièrement CHIJU pour gagner du temps. Il ne doit pas chercher à reproduire dès le départ un système complet de gestion scolaire.
+3. Contenu du MVP
+4. Objectif : tester un flux pédagogique complet avec de vrais enseignants.
+5. Liste de vérification du MVP
+6. 1/10
+[x] Inscription et profil enseignant
+[ ] Création d'une classe et gestion des élèves
+[ ] Appel avec présences et absences
+[ ] Emploi du temps et cahier journal
+[ ] Création et modification de leçons
+[ ] Génération IA de leçons et d'exercices
+[ ] Saisie des notes et calcul des moyennes
+[ ] Export PDF des leçons et rapports
+[ ] Stockage local et synchronisation des modifications essentielles
+[ ] Sécurité des accès et sauvegardes
+Ce qui doit attendre
+- Application complète pour les parents.
+- Paiement intégré dans tous les pays.
+- Reconnaissance automatique de copies manuscrites.
+- Correction automatisée de toutes les disciplines.
+- Analyses prédictives individuelles.
+- Gestion des salaires, de la comptabilité et des frais scolaires.
+- Portail complet pour les ministères et inspections.
+- Traduction automatique dans toutes les langues locales.
+- Ces fonctionnalités augmenteraient le coût et la complexité avant même d'avoir validé le produit principal
+17. Module de paiement et activation de l'application
+17.1. Modèle d'activation
+CHIJU Assistant Pédagogique fonctionne selon un modèle d'activation annuelle.
+Chaque enseignant ou établissement doit activer son compte afin d'accéder aux fonctionnalités complètes de l'application.
+Prix d'activation
+Activation annuelle : 10 000 FCFA / an
+Cette activation donne accès aux fonctionnalités premium de CHIJU :
+- Gestion complète des classes et des élèves.
+- Gestion des présences et absences.
+- Cahier journal numérique.
+- Création et suivi des évaluations.
+- Génération de rapports pédagogiques.
+- Assistant pédagogique intelligent par IA.
+- Bibliothèque de ressources pédagogiques.
+- Sauvegarde et synchronisation des données.
+- Support utilisateur.
+17.2. Moyen de paiement principal
+Paiement par Airtel Money
+Le paiement de l'activation annuelle peut être effectué via Airtel Money.
+Numéro Airtel Money officiel :
++241 77793074
+Procédure d'activation
+1. L'utilisateur effectue un paiement de 10 000 FCFA via Airtel Money au numéro officiel CHIJU.
+2. L'utilisateur transmet la preuve de paiement dans l'application ou au service support.
+3. L'équipe CHIJU vérifie la transaction.
+4. Le compte est activé pour une durée de 12 mois.
+5. L'utilisateur reçoit une confirmation d'activation.
+17.3. Gestion de l'abonnement dans l'application
+L'application doit intégrer un espace :
+"Mon abonnement"
+Fonctionnalités :
+- Statut de l'abonnement (Actif / Expiré).
+- Date d'activation.
+- Date d'expiration.
+- Historique des paiements.
+- Bouton "Renouveler mon abonnement".
+- Notification avant expiration.
+17.4. Notifications de renouvellement
+CHIJU doit envoyer des rappels :
+- 30 jours avant expiration.
+- 15 jours avant expiration.
+- 7 jours avant expiration.
+- Le jour de l'expiration.
+Les notifications doivent être visibles dans l'application et peuvent être envoyées par notification mobile ou autres canaux configurés.
+17.5. Sécurité des paiements
+CHIJU ne doit jamais demander ni stocker :
+- Le code secret Airtel Money.
+- Les informations confidentielles du portefeuille mobile.
+- Les données bancaires personnelles.
+Le système doit uniquement conserver :
+- Identifiant de transaction.
+- Numéro utilisé pour le paiement (selon les obligations légales applicables).
+- Montant payé.
+- Date du paiement.
+- Statut de validation.
+- Compte CHIJU associé.
+17.6. Évolution future des paiements
+Dans les versions futures, CHIJU pourra intégrer :
+- Paiement automatique via API mobile money lorsque disponible.
+- Paiement par autres opérateurs africains.
+- Paiement par carte bancaire.
+- Paiement groupé pour les écoles.
+- Licences institutionnelles pour les réseaux scolaires.
+17.7. Tarification école
+Une offre spécifique pourra être créée pour les établissements :
+- Activation individuelle enseignant : 10 000 FCFA/an.
+- Licence école : tarif négocié selon le nombre d'enseignants, classes et élèves.
+Les tarifs institutionnels devront être définis après les premiers tests terrain auprès des écoles pilotes.
